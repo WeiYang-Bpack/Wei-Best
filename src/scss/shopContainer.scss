@@ -1,0 +1,140 @@
+@import './variables.scss';
+
+.shop{
+	display: relative;
+	&--container{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		&__title{
+			padding:5rem;
+			&--header{
+				color:$color-blue-light;
+				font-size: 5rem;
+				font-family: $cursive-font;
+				padding: 0rem 4rem;
+				overflow: hidden;
+				@include lg{
+					overflow: hidden;
+					font-size: 9rem;
+				}
+			}
+		}
+		&__mainflex{
+			
+			&--filter{
+				width:40rem;
+				
+			
+				
+			}
+		}
+		&__products{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			padding: 2rem;
+
+			@include lg{
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@include md{
+				grid-template-columns: 1fr;
+			}
+			&--single{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				margin: 5rem 2rem;
+				-webkit-box-shadow: 0 8px 6px -6px rgb(44, 44, 44);
+	   			-moz-box-shadow: 0 8px 6px -6px rgb(56, 56, 56);
+	       		 box-shadow: 0 8px 6px -6px rgb(65, 65, 65);
+				&__anchor{
+					text-decoration: none;
+					color: $color-grey-dark;
+					transition: all 0.4s;
+					font-size: 1.5rem;
+					&:hover{
+						color:$color-blue-light;
+					}
+					margin-top: 2rem;
+					
+				}
+				border: 1px solid rgba(0, 174, 255, 0.5);
+				padding: 2rem;
+				border-radius: .5rem;
+				
+				
+
+				&__image{
+					width: 25rem;
+					height: 20rem;
+					@include md{
+						width: 50%;
+						height: 50%;
+					}
+				}
+
+
+				&__button{
+					text-decoration: none;
+					color:white;
+					background-color: $color-blue-light;
+					outline: none;
+					cursor: pointer;
+					border: 1px solid $color-blue-light;
+					border-radius: 10px;
+					margin: 2rem 0;
+					padding: 1rem 2rem;
+					font-size: 2rem;
+					transition: all 0.4s;
+					&:hover{
+						background-color: rgb(255, 255, 255);
+						color:$color-blue-light;
+					}
+
+				}
+
+				&__review{
+					padding: 2rem 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+}
+
+.filter{
+	width: 30vw;
+	@include md{
+		width: 70%;
+	}
+	&--price{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&--category{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		@include lg{
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		@include md{
+			grid-template-columns: 1fr 1fr;
+		}
+		:hover{
+			color:$color-blue-light
+		}
+		
+	}
+	&--bar{
+		
+	}
+}
+
+
+
+

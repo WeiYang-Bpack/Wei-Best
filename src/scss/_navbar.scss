@@ -1,0 +1,227 @@
+@import './variables.scss';
+@keyframes activateNavbar{
+	0% {
+		height:0;
+	//    transform: translateY(-100rem);
+	   opacity: 0;
+	}
+	100% {
+		
+	//    transform: translateY(0rem);
+	   opacity: 1;
+	}
+ }
+
+
+
+
+.Navbar{
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	height: 8rem;
+	width: 100%;
+	padding-top:1rem;
+	border-bottom: 2px solid rgba($color-grey-dark, .13);
+	box-shadow: 0 0.2rem .7rem rgba($color-black,0.15);
+	text-transform: uppercase;
+	background-color: $color-grey-light;
+	outline: none;
+	z-index: 100;
+
+	&--center{
+		position: relative;
+		&__inputbox{
+			width: 25vw;
+			font-size: 1.4rem;
+			padding:.5rem 2rem;
+			border: none;
+			border-radius: 4px;
+			outline: none;
+			
+		}
+		&__button{
+			font-size: 1.5rem;
+			outline: none;
+			padding: .4rem;
+			border: none;
+			background-color: $color-blue-light;
+			color:white;
+			border-radius: .25rem;
+			transition: all 0.4s;
+			
+		}
+	}
+	&--left{
+		display: flex;
+		font-size: 2rem;
+		margin-left: 5rem;
+		font-weight: bold;
+		cursor: pointer;
+		&__wei{
+			margin-right: 1rem;
+			color: $color-blue-light;
+		}
+		&__shop{
+			display: flex;
+  			 align-items:center;
+			
+		}
+	
+		
+
+	}
+	
+	&--right{
+		height: 4rem;
+		display: flex;
+		
+		&__active{
+			height: 4rem;
+			display: flex;
+
+		}
+	}
+	
+	&--bar{
+		display: none;
+	}
+	&__links{
+		display: flex;
+		justify-content: center;
+		font-size: 1.5rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		text-decoration: none;
+		padding-top: 1rem;
+		color: $color-black;
+		&:hover{
+			text-decoration: underline;
+		}
+
+		&--url{
+			
+			display: flex;
+			align-items: center;
+			background-color: $color-blue-light;
+			padding: 1rem;
+			color:white;
+			border-radius: 1rem;
+			margin-right: 1rem;
+			&__link{
+				margin-left: 1rem;
+				font-size: 1.2rem;
+			}
+			&__name{
+				color:white;
+				text-decoration: none;
+			}
+
+			
+		}
+
+		&--login{
+			overflow: hidden;
+			background-color: $color-blue-light;
+			font-size: 1.5rem;
+			margin-left: 2rem;
+			margin-right: 2rem;
+			text-decoration: none;
+			color: $color-grey-light;
+			padding:.9rem 4rem;
+			border-radius: 20rem;
+			border: 1px solid $color-blue-light;
+			transition: .4s;
+			&:hover{
+				background-color: $color-grey-light;
+				color: $color-blue-light;
+			}
+		}
+
+
+	}
+	
+	
+}
+
+
+@include lg{
+			
+	.Navbar{
+		display: flex;
+		position: fixed;
+		justify-content: space-between;
+		align-items: center;
+		height: 8rem;
+		width: 100%;
+		padding-top:1rem;
+		border-bottom: 2px solid rgba($color-grey-dark, .13);
+		box-shadow: 0 0.2rem .7rem rgba($color-black,0.15);
+		text-transform: uppercase;
+		background-color: $color-grey-light;
+		z-index: 100;
+		outline: none;
+
+
+		
+
+		&--left{
+			display: flex;
+			font-size: 2rem;
+			margin-left: 5rem;
+			font-weight: bold;
+			cursor: pointer;
+		
+			&__wei{	
+				margin-right: 1rem;
+				color: $color-blue-light;
+			}
+		
+		}
+		
+		&--right{	
+
+			display: none;
+			left:100%;
+			&__active{
+				
+				transition: all .5s ease;
+				display:flex;
+				animation-name: activateNavbar;
+   				animation-duration: .4s;
+
+				
+				padding:2rem 0;
+				width: 100%;
+				text-align: center;
+				height:40rem;
+				justify-content: space-between;
+				background-color: white;
+				top:8rem;
+				position: fixed;
+				
+				flex-direction: column;
+				align-items: center;
+
+			}
+		}
+		&--bar{
+			display: flex;
+			font-size: 3rem;
+			margin-right: 2rem;
+			cursor: pointer;
+		}
+		
+	
+	}
+	
+	
+	
+}
+
+
+//Active Navbar
+
+
+
