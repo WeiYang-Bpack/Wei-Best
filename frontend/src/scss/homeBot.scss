@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+.homeslider{
+	position: relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5rem;
+	height: 80vh;
+	@include lg{
+		display: flex;
+		flex-direction: column;
+	}
+	&--top{
+		position: absolute;
+		left:10rem;
+		background-image: url('https://i.pinimg.com/originals/3d/54/fe/3d54fe34a2c76bbfbfd96f53ca867e22.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		width: 50vw;
+		height: 70vh;
+		@include md{
+			position: relative;
+			width: 90%;
+			left:0;
+		}
+		// margin-right: 20rem;
+	
+		// width: 50%;
+		// height: 70vh;
+	}
+
+	&--bottom{
+		position: absolute;
+		right: 10rem;
+		width: 50%;
+		height: 50vh;
+		background-color: white;
+		
+		@include md{
+			position: relative;
+			right: 0rem;
+			width: 90%;
+			height: 50vh;
+		}
+		&__inner{
+			
+			margin:1rem;
+			border: 1px solid rgb(161, 161, 161);
+			height: 48.4vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			@include md{
+				margin:1rem;
+				border: 1px solid rgb(161, 161, 161);
+				height: 31vh;
+			}
+
+			&--title{
+				font-size: 3rem;
+				font-family: $title-font;
+			}
+			&--icon{
+				font-size: 7rem;
+			}
+			&__info{
+				padding: 2rem 8rem;
+				font-size: 1.2rem;
+			}
+		}
+
+	}
+}

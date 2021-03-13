@@ -1,0 +1,183 @@
+.homeTop {
+  background-image: url("https://www.singhhomes.com/wp-content/uploads/2019/03/Create-the-Perfect-Home-Workstation-or-Office-2.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  transform-origin: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+  .homeTop--arrowDown {
+    color: white; }
+    @media (max-width: 768px) {
+      .homeTop--arrowDown {
+        display: none; } }
+    .homeTop--arrowDown--a {
+      text-decoration: none;
+      outline: none; }
+      .homeTop--arrowDown--a__icon {
+        font-size: 7rem;
+        color: white; }
+        .homeTop--arrowDown--a__icon:hover {
+          animation: wiggle 200ms infinite;
+          animation-timing-function: linear; }
+  .homeTop--phone {
+    position: absolute;
+    bottom: 10rem;
+    left: 10rem;
+    display: flex;
+    padding-bottom: 1.5rem;
+    justify-content: center;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer; }
+    .homeTop--phone__icon {
+      margin-right: 1rem;
+      font-size: 2.5rem; }
+    .homeTop--phone:hover {
+      text-decoration: underline; }
+  .homeTop--socialMedia {
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
+    color: white; }
+    .homeTop--socialMedia__anchor {
+      color: white;
+      text-decoration: none;
+      outline: none; }
+    .homeTop--socialMedia__icon {
+      width: 4rem;
+      height: 4rem;
+      font-size: 1rem;
+      border: 1px solid white;
+      margin: 7px;
+      cursor: pointer;
+      transition: .4s;
+      border-radius: .5rem; }
+      .homeTop--socialMedia__icon:hover {
+        background-color: #1dace3; }
+  .homeTop--container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center; }
+    .homeTop--container__header {
+      color: #1dace3;
+      font-size: 7rem;
+      font-family: "Great Vibes", cursive;
+      transform: translateX(-12rem);
+      padding: 0rem 4rem;
+      overflow: hidden; }
+      @media (max-width: 992px) {
+        .homeTop--container__header {
+          font-size: 5rem;
+          overflow: hidden; } }
+    .homeTop--container__headerInfo {
+      color: white;
+      font-size: 8rem;
+      width: 50vw;
+      font-family: "Oswald", sans-serif; }
+      @media (max-width: 992px) {
+        .homeTop--container__headerInfo {
+          font-size: 4rem; } }
+    .homeTop--container__line {
+      border-top: 2px solid #1dace3;
+      border-bottom: 2px solid #1dace3;
+      padding-top: .5rem;
+      width: 20rem; }
+    .homeTop--container__description {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: white; }
+      @media (max-width: 992px) {
+        .homeTop--container__description {
+          font-size: 1.4rem; } }
+    .homeTop--container__buttons {
+      display: flex;
+      flex-direction: row;
+      margin: 2rem; }
+      @media (max-width: 768px) {
+        .homeTop--container__buttons {
+          flex-direction: column; } }
+      .homeTop--container__buttons--link1 {
+        font-size: 1.5rem;
+        margin: 2rem 3rem;
+        text-decoration: none;
+        color: white;
+        background-color: #1dace3;
+        border: 1px solid #1dace3;
+        border-radius: 30rem;
+        padding: 1.5rem 5rem;
+        transition: all 0.4s; }
+        .homeTop--container__buttons--link1:hover {
+          color: #1dace3;
+          background-color: white; }
+      .homeTop--container__buttons--link2 {
+        font-size: 1.5rem;
+        margin: 2rem 3rem;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        background-color: #ffffff00;
+        border-radius: 30rem;
+        padding: 1.5rem 5rem;
+        transition: all 0.4s; }
+        .homeTop--container__buttons--link2:hover {
+          color: #1dace3;
+          background-color: white; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes moveY {
+  from {
+    transform: translateY(10%); }
+  to {
+    transform: translateY(0%); } }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0); } }
+
+@keyframes wiggle {
+  0% {
+    transform: translate(2px, 0); }
+  50% {
+    transform: translate(-2px, 0); }
+  100% {
+    transform: translate(2px, 0); } }

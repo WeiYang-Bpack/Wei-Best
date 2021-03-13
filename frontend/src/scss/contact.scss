@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+.Contact{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	&--title{
+		font-size: 3rem;
+		margin: 1rem 0;
+	}
+	&--subtitle{
+		font-size: 2rem;
+		margin: 1rem 0;
+	}
+	&--status{
+		font-size: 1.7rem;
+		justify-content: flex-start;
+		
+	}
+	&--completed{
+		color:$color-blue-light;
+		font-size: 1.5rem;
+		
+		&__things{
+			margin: 1rem 0;
+			font-size: 1.2rem;
+		}
+	}
+	&--todo{
+		color:red;
+		font-size: 1.5rem;
+		&__things{
+			margin: 1rem 0;
+			font-size: 1.2rem;
+		}
+	}
+
+	&--future{
+		color:orange;
+		font-size: 1.5rem;
+		&__things{
+			margin: 1rem 0;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.TEST{
+	width: 50vw;
+	
+}

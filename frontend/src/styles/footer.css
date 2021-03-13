@@ -1,0 +1,77 @@
+.footer {
+  position: relative;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer--Icon {
+    color: white;
+    font-size: 2rem;
+    margin-right: 1rem; }
+    .footer--Icon:hover {
+      color: #1dace3; }
+  .footer--Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    @media (max-width: 1200px) {
+      .footer--Container {
+        grid-template-columns: 1fr 1fr; } }
+    .footer--Container__section {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      margin: 2rem 7rem; }
+      .footer--Container__section--desNews {
+        margin-top: 2rem; }
+        .footer--Container__section--desNews--hiring {
+          background-color: #ff1b54;
+          margin-top: 2rem;
+          color: white;
+          text-align: center;
+          padding: 1rem 1rem;
+          border-radius: 6px; }
+      .footer--Container__section--links {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: .7rem 0; }
+        .footer--Container__section--links:hover {
+          text-decoration: underline; }
+      .footer--Container__section--des0 {
+        margin-top: 2rem; }
+        .footer--Container__section--des0--special {
+          margin-top: 2rem;
+          color: #1dace3;
+          cursor: pointer; }
+          .footer--Container__section--des0--special--anchor {
+            text-decoration: none;
+            color: #1dace3; }
+            .footer--Container__section--des0--special--anchor:hover {
+              text-decoration: underline; }
+      .footer--Container__section--title {
+        font-size: 1.5rem;
+        font-weight: bold; }
+  .footer--copyright {
+    position: relative;
+    bottom: 2rem;
+    color: white;
+    font-size: 1rem; }
+    .footer--copyright__icon {
+      font-size: 1.3rem; }
+    .footer--copyright__goUp {
+      position: absolute;
+      border-radius: 8px;
+      bottom: 20%;
+      right: 20%;
+      background-color: #1dace3;
+      transition: all 0.4s; }
+      .footer--copyright__goUp--icon {
+        font-size: 4rem;
+        color: white; }
+        @media (max-width: 992px) {
+          .footer--copyright__goUp--icon {
+            display: none; } }
+        .footer--copyright__goUp--icon:hover {
+          color: #1dace3; }
+      .footer--copyright__goUp:hover {
+        background-color: white; }

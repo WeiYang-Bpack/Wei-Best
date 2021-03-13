@@ -1,0 +1,36 @@
+.Contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto; }
+  .Contact--title {
+    font-size: 3rem;
+    margin: 1rem 0; }
+  .Contact--subtitle {
+    font-size: 2rem;
+    margin: 1rem 0; }
+  .Contact--status {
+    font-size: 1.7rem;
+    justify-content: flex-start; }
+  .Contact--completed {
+    color: #1dace3;
+    font-size: 1.5rem; }
+    .Contact--completed__things {
+      margin: 1rem 0;
+      font-size: 1.2rem; }
+  .Contact--todo {
+    color: red;
+    font-size: 1.5rem; }
+    .Contact--todo__things {
+      margin: 1rem 0;
+      font-size: 1.2rem; }
+  .Contact--future {
+    color: orange;
+    font-size: 1.5rem; }
+    .Contact--future__things {
+      margin: 1rem 0;
+      font-size: 1.2rem; }
+
+.TEST {
+  width: 50vw; }

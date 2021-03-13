@@ -1,0 +1,59 @@
+@import './variables.scss';
+
+.Cart{
+    position: relative;
+    height: 80vh;
+
+    @include lg{
+        height: 95vh;
+    }
+    &--outerContainer{
+        
+        margin: 5rem 10rem;
+        @include lg{
+            margin:2rem 5rem;
+        }
+    }
+    &--title{
+        margin: 2rem 5rem;
+        font-size: 4rem;
+    }
+    &--grid{
+        display: flex;
+        width: 80%;
+        // background-color: green;
+        flex-direction: row;
+        margin-top: 2rem;
+        @include lg{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__left{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            &--item{
+                display: grid;
+                flex-direction: row;
+                padding: 2rem;
+                grid-template-columns: 5fr 5fr 5fr 5fr 1fr;
+                margin-top: 2rem;
+                border-top: 1px solid rgba(129, 126, 126, 0.344);
+                border-bottom: 1px solid rgba(129, 126, 126, 0.344);
+                &__image{
+                    width: 15rem;
+                    height: 15rem;
+                }
+            }
+        }
+        &__right{
+         position: fixed;
+         
+        }
+        @include lg{
+       
+
+        }
+    }
+}
