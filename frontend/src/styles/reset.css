@@ -24,8 +24,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-
-  
+  min-height: 100vh;
   min-height: -webkit-fill-available;
   overflow: hidden;
   /* Hide scrollbars */ }
@@ -43,10 +42,13 @@ body {
   font-size: 2rem;
   padding: 1rem 3rem;
   border: 1px solid #1dace3;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  text-decoration: none; }
   .clickButton:hover {
     color: #1dace3;
     background-color: white; }
+  .clickButton:focus {
+    outline: none; }
 
 .addCart {
   color: white;

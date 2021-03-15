@@ -2,11 +2,9 @@
 
 .Cart{
     position: relative;
-    height: 80vh;
+    
 
-    @include lg{
-        height: 95vh;
-    }
+   
     &--outerContainer{
         
         margin: 5rem 10rem;
@@ -18,42 +16,78 @@
         margin: 2rem 5rem;
         font-size: 4rem;
     }
-    &--grid{
+    
+    &--innerContainer{
+       
         display: flex;
-        width: 80%;
-        // background-color: green;
         flex-direction: row;
-        margin-top: 2rem;
         @include lg{
-            display: flex;
             flex-direction: column;
-            width: 100%;
         }
-        &__left{
-            position: relative;
+        //table
+        &__table{
+
+            &--tr{
+                
+               
+                &__th{
+                   
+                    padding:2rem 1rem;
+                    border-top: 2px solid black;
+                    
+                }
+            }
+            &--td{
+                border-top: 1px solid gray;
+                vertical-align: middle;
+                text-align: center;
+            }
+            &--td{
+                padding: 1rem 1rem;
+                &__colimage{
+                    height: 15rem;
+                    width: 15rem;
+                }
+            }
+            
+        }
+
+        //CheckingOut
+        &__checkout{
             display: flex;
             flex-direction: column;
-            &--item{
-                display: grid;
-                flex-direction: row;
-                padding: 2rem;
-                grid-template-columns: 5fr 5fr 5fr 5fr 1fr;
-                margin-top: 2rem;
-                border-top: 1px solid rgba(129, 126, 126, 0.344);
-                border-bottom: 1px solid rgba(129, 126, 126, 0.344);
-                &__image{
-                    width: 15rem;
-                    height: 15rem;
+            align-items: center;
+            margin-left: 5rem;
+            margin-top: 7rem;
+            &__cButton{
+                width: 100%;
+            }
+            &--subtotal{
+                width: 100%;
+                text-align: right;
+                padding-left: 7rem;
+                font-size: 3rem;
+                border-bottom: 1px solid black;
+                
+                &__button{
+                    width: 100%;
+                    text-decoration: none;
+                    font-size: 2rem;
+                    background-color: $color-blue-light;
+                    margin-top: 2rem;
+                    color:white;
+                    border-radius: 2px;
+                    border:none;
+                    text-decoration: none;
+                    border: 1px solid;
+                    padding: 1rem;
+                    box-shadow: 0px 2px;
+                    &:hover{
+                        background-color: #1b99ca;
+                    }
                 }
             }
         }
-        &__right{
-         position: fixed;
-         
-        }
-        @include lg{
-       
 
-        }
     }
 }

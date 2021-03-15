@@ -48,6 +48,12 @@ export default function Navbar() {
 		
 		// alert('success')
 	}
+
+	useEffect(()=>{
+		document.addEventListener("mousedown",()=>{
+			setClick(true)
+		})
+	})
 	
 	
 	return (

@@ -51,9 +51,13 @@ body{
 	padding:1rem 3rem;
 	border: 1px solid $color-blue-light;
 	transition: all 0.4s;
+	text-decoration: none;
 	&:hover{
 		color:$color-blue-light;
 		background-color: white;
+	}
+	&:focus{
+		outline:none;
 	}
 
 }

@@ -142,3 +142,6 @@ export default function ProductDetails({match}) {
 		
 	)
 }
+
+//Test Case
+

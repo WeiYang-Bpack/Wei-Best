@@ -69,7 +69,8 @@
           transition: all 0.4s; }
           .shop--container__products--single__button:hover {
             background-color: white;
-            color: #1dace3; }
+            color: #1dace3;
+            text-decoration: none; }
         .shop--container__products--single__review {
           padding: 2rem 0;
           text-align: center; }
