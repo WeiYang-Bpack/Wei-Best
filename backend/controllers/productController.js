@@ -1,7 +1,8 @@
 const Product = require('../models/product')
 const ErrorHandler = require('../utils/errorHandler');
 let catchAsyncErrors = require('../middlewares/catchAsyncErrors')
-const APIFeatures = require('../utils/apiFeatures')
+const APIFeatures = require('../utils/apiFeatures');
+const user = require('../models/user');
 //Create New Products
 
 exports.newProduct = catchAsyncErrors(async (req, res, next) => {
@@ -101,9 +102,9 @@ exports.deleteProduct = catchAsyncErrors(async(req, res, next)=>{
 exports.createProductReview = catchAsyncErrors(async (req, res, next) => {
 
     const { rating, comment, productId } = req.body;
-
+    console.log(req.user);
     const review = {
-        user: req.user._id,
+        _id: req.user._id,
         name: req.user.name,
         rating: Number(rating),
         comment
@@ -155,7 +156,7 @@ exports.deleteReview = catchAsyncErrors(async (req, res, next) => {
 
     const product = await Product.findById(req.query.productId);
 
-    console.log(product);
+
 
     const reviews = product.reviews.filter(review => review._id.toString() !== req.query.id.toString());
 

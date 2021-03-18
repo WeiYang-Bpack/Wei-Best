@@ -12,6 +12,8 @@ export default function Cart() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+
     // const removeCartItemHandler = (id) => {
     //     dispatch(removeItemFromCart(id))
     // }
@@ -75,6 +77,9 @@ export default function Cart() {
                                         <th className='Cart--innerContainer__table--tr__th'>
                                            <h3>SUBTOTAL</h3> 
                                         </th>
+                                        <th className='Cart--innerContainer__table--tr__th'>
+                                          
+                                        </th>
                                     </tr>
 
 
@@ -83,8 +88,9 @@ export default function Cart() {
                                             <td className='Cart--innerContainer__table--td'><img className='Cart--innerContainer__table--td__colimage' src={item.image} /></td>
                                             <td className='Cart--innerContainer__table--td'><Link to={`/product/${item.product}`}><h4>{item.name}</h4></Link></td>
                                             
-                                            <td className='Cart--innerContainer__table--td'><h4><input type='number' placeholder={item.quantity}></input></h4></td>
-                                            <td className='Cart--innerContainer__table--td'><h3>{item.price}</h3></td>
+                                            <td className='Cart--innerContainer__table--td'><h4><input type='number' class="form-control count d-inline" value={item.quantity} readOnly></input></h4></td>
+                                            <td className='Cart--innerContainer__table--td'><h3>${item.price}</h3></td>
+                                            <td className='Cart--innerContainer__table--td'><h3>${item.price*item.quantity}</h3></td>
                                             <td className='Cart--innerContainer__table--td'><h3><BiTrash></BiTrash></h3></td>
                                         </tr>
 
